@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Common from "./components/Common/Common";
+import { Marginer } from "./components/Marginer";
+import Mission from "./components/Mission/Mission";
+import Vision from "./components/Vision/Vision";
+import TeamMembers from "./components/TeamMembers/TeamMembers";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TeamMembers />
+      <Marginer direction="vertical" margin="7em" />
+      <Mission />
+      <Marginer direction="vertical" margin="7em" />
+      <Vision />
     </div>
   );
 }
