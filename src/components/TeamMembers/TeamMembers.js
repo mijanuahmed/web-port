@@ -11,39 +11,65 @@ import bishen from "../../images/bishen.png";
 import GithubIcon from "../../images/github.png";
 import DribbleIcon from "../../images/dribble.png";
 import ellipse from "../../images/ellipse.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDribbble, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const TeamMembers = () => {
   return (
     <>
       <h2 className="intro">
-        Let's Introduce Our&nbsp;<span className="intro-team"> Team</span>
+        Let's Introduce Our <span className="intro-team"> Team</span>{" "}
       </h2>
       <section className="teammembers-section">
         <div>
           <ul className="circle-container">
             <li>
               <img src={kennedy} />
+              <div class="circle-text">
+                <p>Kennedy - Frontend Developer(Founder)</p>
+              </div>
             </li>
             <li>
               <img src={wildan} />
+              <div class="circle-text">
+                <p>Wildan - Web Designer</p>
+              </div>
             </li>
             <li>
               <img src={bishen} />
+              <div class="circle-text">
+                <p>Bishen - Debug & Optimaization</p>
+              </div>
             </li>
             <li>
               <img src={mritunjoy} />
+              <div class="circle-text">
+                <p>Mritunjoy - Backend Developer</p>
+              </div>
             </li>
             <li>
               <img src={zaid} />
+              <div class="circle-text">
+                <p>Zaid - Frontend Developer</p>
+              </div>
             </li>
             <li>
               <img src={munshi} />
+              <div class="circle-text">
+                <p>Moniratna - Backend Developer</p>
+              </div>
             </li>
             <li>
               <img src={ebosele} />
+              <div class="circle-text">
+                <p>Ebosele - Web Designer</p>
+              </div>
             </li>
             <li>
               <img src={mijan} />
+              <div class="circle-text">
+                <p>Mijan - Frontend Developer</p>
+              </div>
             </li>
             {/* <li>
               <img className="ellipse" src={ellipse} />
@@ -65,11 +91,11 @@ const TeamMembers = () => {
           </p>
           <div className="button-container">
             <a href="" className="button">
-              <img src={DribbleIcon} alt="" />
+              <FontAwesomeIcon icon={faDribbble} />
               See our Dribble
             </a>
             <a href="" className="button">
-              <img src={GithubIcon} alt="" />
+              <FontAwesomeIcon icon={faGithub} />
               See our Github
             </a>
           </div>

@@ -8,9 +8,9 @@ function App() {
   return (
     <div className="App">
       <TeamMembers />
-      <Marginer direction="vertical" margin="7em" />
+      <Marginer direction="vertical" margin="4em" />
       <Mission />
-      <Marginer direction="vertical" margin="7em" />
+      <Marginer direction="vertical" margin="4em" />
       <Vision />
     </div>
   );

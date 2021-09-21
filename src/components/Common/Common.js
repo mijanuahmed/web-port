@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import "./Common.css";
 
 const Common = ({ title, headline, description, btnText, img, type }) => {
@@ -16,19 +15,20 @@ const Common = ({ title, headline, description, btnText, img, type }) => {
             </button>
           </div>
           <div>
-            <img src={img} alt="" />
+            <img className="mission-img" src={img} alt="" />
           </div>
         </div>
       )}
 
       {type === "vision" && (
-        <div className="common">
+        <div className="common ">
           <div>
-            <img src={img} alt="" />
+            <img className="vision-img" src={img} alt="" />
           </div>
-          <div className="common-description">
+          <div className="vision-description">
             <h2>{title}</h2>
             <h3>{headline}</h3>
+
             <p>{description}</p>
             <button href="" className="common-button">
               {btnText}
